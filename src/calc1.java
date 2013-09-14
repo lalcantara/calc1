@@ -32,6 +32,35 @@ public class calc1 {
 		
 		System.out.println("The answer is " + result);
 	}
+	
+	private static double divideValues(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		double result = d1 / d2;
+		return result;
+	}
+
+	private static double multiplyValues(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		double result = d1 * d2;
+		return result;
+	}
+
+	private static double subtractValues(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		double result = d1 - d2;
+		return result;
+	}
+
+	private static double addValues(String s1, String s2)
+			throws NumberFormatException {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		double result = d1 + d2;
+		return result;
+	}
 
 	private static String getInput(String prompt) {
 		BufferedReader stdin = new BufferedReader(
